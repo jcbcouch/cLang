@@ -24,9 +24,9 @@ myNum = 15;
 int myNum2 = 15; 
 printf("%d\n", myNum2); //%d or %i for int
 float myFloatNum = 5.99;   // Floating point number
-printf("%f\n", myFloatNum);
+printf("%f\n", myFloatNum);  //f for float
 char myLetter = 'D';       // Character
-printf("%c\n", myLetter);
+printf("%c\n", myLetter);  // c for character
 
 printf("My favorite number is: %d\n", myNum2); 
 printf("My number is %d and my letter is %c\n", myNum2, myLetter); 
@@ -43,7 +43,7 @@ printf("%d\n", a + b + c);
 
 int a2, b2, c2;
 a2 = b2 = c2 = 50;
-printf("%d", a2 + b2 + c2); 
+printf("%d\n", a2 + b2 + c2); 
 
 /*
     Names can contain letters, digits and underscores
@@ -52,6 +52,25 @@ printf("%d", a2 + b2 + c2);
     Names cannot contain whitespaces or special characters like !, #, %, etc.
     Reserved words (such as int) cannot be used as names
 */
+
+
+int myNumbers[] = {25, 50, 75, 100}; //array
+printf("%d\n", myNumbers[0]);
+myNumbers[0] = 33;
+
+int i;
+for (i = 0; i < 4; i++) {
+  printf("%d\n", myNumbers[i]);
+}
+
+// Declare an array of four integers:
+int myNumbers2[4];
+
+// Add elements
+myNumbers2[0] = 25;
+myNumbers2[1] = 50;
+myNumbers2[2] = 75;
+myNumbers2[3] = 100;
 
   return 0;
 } 
